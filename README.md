@@ -6,17 +6,11 @@ Dans ce tutoriel, nous allons créer un jeu simple en JavaFX où une fusée peut
 
 ![image](https://github.com/ramalhom/JavaFXGalactic/assets/3630367/15a9d10f-1c13-4c1c-97cc-ce8cc009bc58)
 
-### Étape 1: Configurer le Projet
 
-1. **Créer un nouveau projet JavaFX**:
-   - Ouvrez votre IDE et créez un nouveau projet Java.
-   - Ajoutez les bibliothèques JavaFX au projet. (Vous pouvez suivre des tutoriels spécifiques à votre IDE pour cette étape.)
+### Étape 1: Structurer le Projet
 
-### Étape 2: Structurer le Projet
-
-2. **Créer la structure de base**:
+1. **Créer la structure de base**:
    - Nous allons créer les classes suivantes:
-     - `Main`: La classe principale pour lancer l'application.
      - `Rocket`: Une classe représentant la fusée.
      - `Projectile`: Une classe pour les projectiles.
 
@@ -28,39 +22,9 @@ src
     └── Projectile.java
 ```
 
-### Étape 3: Implémenter la Classe `Main`
+### Étape 2: Créer la Classe `Rocket`
 
-3. **Créer et configurer la fenêtre principale**:
-
-```java
-package sample;
-
-import javafx.application.Application;
-import javafx.scene.Scene;
-import javafx.scene.layout.Pane;
-import javafx.stage.Stage;
-
-public class Main extends Application {
-
-    public static void main(String[] args) {
-        launch(args);
-    }
-
-    @Override
-    public void start(Stage primaryStage) {
-        Pane root = new Pane();
-        Scene scene = new Scene(root, 800, 600);
-
-        primaryStage.setTitle("Rocket Game");
-        primaryStage.setScene(scene);
-        primaryStage.show();
-    }
-}
-```
-
-### Étape 4: Créer la Classe `Rocket`
-
-4. **Définir la fusée et ses mouvements**:
+2. **Définir la fusée et ses mouvements**:
 
 ```java
 package sample;
@@ -89,9 +53,9 @@ public class Rocket extends Rectangle {
 }
 ```
 
-### Étape 5: Créer la Classe `Projectile`
+### Étape 3: Créer la Classe `Projectile`
 
-5. **Définir les projectiles**:
+3. **Définir les projectiles**:
 
 ```java
 package sample;
@@ -112,9 +76,9 @@ public class Projectile extends Rectangle {
 }
 ```
 
-### Étape 6: Intégrer la Fusée et les Projectiles dans la Classe `Main`
+### Étape 4: Intégrer la Fusée et les Projectiles dans la Classe `Main`
 
-6. **Ajouter la fusée et gérer les interactions clavier**:
+4. **Ajouter la fusée et gérer les interactions clavier**:
 
 ```java
 package sample;
@@ -186,16 +150,16 @@ public class Main extends Application {
 }
 ```
 
-### Étape 7: Exécuter le Programme
+### Étape 5: Exécuter le Programme
 
-7. **Lancer le jeu**:
+5. **Lancer le jeu**:
    - Exécutez la classe `Main`.
    - Utilisez les touches fléchées gauche et droite pour déplacer la fusée.
    - Appuyez sur la barre d'espace pour tirer des projectiles.
 
 Vous avez maintenant un jeu simple en JavaFX où une fusée peut se déplacer et tirer des projectiles. Ce projet peut être amélioré en ajoutant des ennemis, des collisions, et des effets sonores. N'hésitez pas à expérimenter et à ajouter vos propres fonctionnalités !
 
-### Étape 8: Challenge pour les Étudiants
+### Étape 6: Challenge pour les Étudiants
 
 Pour ajouter un défi et encourager les étudiants à améliorer leur projet, nous allons leur proposer quelques améliorations et fonctionnalités supplémentaires qu'ils peuvent implémenter. Voici les défis et quelques indications pour les aider sans leur donner directement la solution complète.
 
@@ -248,7 +212,7 @@ Pour ajouter un défi et encourager les étudiants à améliorer leur projet, no
 
 ### Ressources Supplémentaires
 
-1. **Documentation JavaFX**: Pour comprendre comment manipuler les éléments de l'interface utilisateur et les animations.
+1. **Documentation JavaFX**: https://openjfx.io/openjfx-docs/ Pour comprendre comment manipuler les éléments de l'interface utilisateur et les animations.
 2. **Tutoriels en ligne**: Cherchez des exemples de jeux JavaFX simples pour vous inspirer.
 3. **Forums et Communautés**: Posez des questions sur des forums comme Stack Overflow pour obtenir de l'aide sur des problèmes spécifiques.
 
